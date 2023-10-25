@@ -28,10 +28,10 @@ $(document).ready(function () { //creates call back function to wait for html to
     }
 
     html += ` 
-             <div id="hour-${index}" class= "row time-block ${planColor}"
+             <div id="hour-${index}" class= "row time-block ${planColor}">
              <div class= "col-2 col-md-1 hour text-center py-3">${timeBlock}</div>
              <textarea class= "col-8 col-md-10 description" rows="3">${saveList} </textarea>
-             <button class= "btn saveBtn col-2 col-md-1" aria-label="save>
+             <button class= "btn saveBtn col-2 col-md-1" aria-label="save">
                 <i class="fas fa-save" aria-hidden="true"></i>
               </button>
               </div>
