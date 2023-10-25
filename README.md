@@ -15,7 +15,7 @@ Assistance with the JavaScript was given by my tutor Sangeetha Kaliaperumal.
 Please refer to license in the repo.
 
 ## Website URL:
-
+https://evanrc.github.io/WDP-Planner/
 
 ## Website ScreenShot:
 ![image](https://github.com/EvanRC/WDP-Planner/assets/124648885/32376577-8bee-4fb6-b272-10fda0d93c47)
