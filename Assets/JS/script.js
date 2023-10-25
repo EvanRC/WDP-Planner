@@ -6,7 +6,7 @@ $(document).ready(function () { //creates call back function to wait for html to
   setInterval(function () {
     $("#currentDay").text(dayjs().format ('hh:mm:ss A YYYY-MM-DD'))
   }, 1000) //update the time every second
-  for (let index = 9; index < 18; index++) { //creates for loop to change 24 hour clock format to 12 hour format and determine if it's am or pm
+  for (let index = 9; index < 18; index++) { //creates a loop to change 24 hour clock format to 12 hour format and determine if it's am or pm
     if (index < 12) {
       var timeBlock = index + "AM"
     } else if (index === 12) {
@@ -26,7 +26,17 @@ $(document).ready(function () { //creates call back function to wait for html to
     else {
       var planColor = "future" //if statment sets the color associated with future event if it is greater than the current hour
     }
+
+    html += ` 
+             <div id="hour-${index}" class= "row time-block ${planColor}"
+             <div class= "col-2 col-md-1 hour text-center py-3">${timeBlock}</div>
+             <textarea class= "col-8 col-md-10 description" rows="3">${saveList} </textarea>
+             <button class= "btn saveBtn col-2 col-md-1" aria-label="save>
+                <i class="fas fa-save" aria-hidden="true"></i>
+              </button>
+              </div>
+              `
+            
+  } // creates dynamic html rows numbered by hours 9am to 5pm with a text area to put a todo and a savebutton to save the info provided.
   
-   
-  }
 })
